@@ -1,0 +1,75 @@
+h1{
+    text-align: center;
+}
+
+.formCadastro{
+    display: flex;
+    justify-content: center;
+    margin-top: 8%;
+}
+
+.formCadastroPS{
+    margin-top: 8%;
+    margin-left: 25%;
+    width: 50vw;
+    overflow: hidden;
+}
+
+.row{
+    width: 90vw;
+}
+
+
+
+.forms{
+    margin: 0% 20%;
+}
+
+.button, .submit{
+    background-color: #eb87cd;
+    margin: 2% 0%;
+}
+
+.button:hover, .submit:hover{
+    background-color: #c20499;
+}
+
+
+
+.mb-2{
+    text-align: center;
+}
+
+.visu{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonVoltar{
+    margin-left: 48%;
+}
+
+
+
+svg:hover{
+    stroke-width: 3;
+    height: 30px;
+}
+
+.Column a{
+    color: black;
+}
+
+.Column a:hover{
+    font-size: 1.2em;
+}
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15%;
+    font-size: 1.5em;
+}

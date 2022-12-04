@@ -1,0 +1,67 @@
+main h1{
+    margin-top: 50px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: 2%;
+}
+
+/* linhas pares (even) */
+table tbody tr:nth-child(even) {
+    background-color: #ffd7f3;
+}
+/* linhas ímpares (odd) */
+table tbody tr:nth-child(odd) {
+    background-color: #fac9eb;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr{
+    background-color: #eb87cd;
+    border: 1px solid white;
+    padding: .35em;
+} 
+
+table th, table td{
+    padding: .62em;
+    text-align: center;
+}
+
+table th{
+  font-size: .85em;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+tr button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.container-table{
+    padding: 1px 200px;
+    margin-bottom: 2%;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 680px) {
+
+    .container-table {
+        padding: 1px 25px;
+        margin-bottom: 5%;
+    }
+}
