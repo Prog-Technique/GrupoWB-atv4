@@ -5,7 +5,7 @@
 <p>
     <a href="#sobre">Sobre</a> | 
     <a href="#tec">Tecnologia</a> | 
-    <a href="#manual">Manual do usuário</a> |
+    <a href="#manual">Manual do usuário</a> 
 </p>
 
 </div>
@@ -20,7 +20,8 @@
 <br>
 
 > 🔗 **Link** <br>
-> - Documento: 
+> - Documento: [atviv-wb.pdf](https://github.com/Prog-Technique/atv4/files/10147763/atviv-wb.pdf)
+
 
     
 <br>
@@ -33,9 +34,8 @@
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"/>
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white"/>
 <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
-<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/>
 
- Também foi utilizado o [Materialize CSS](https://materializecss.com) e o [Bootstrap](https://getbootstrap.com.br/)
+ Também foi utilizado o [Materialize CSS](https://materializecss.com), o [Bootstrap](https://getbootstrap.com.br/) e o MySQL Workbanch.
 </div>
 
 <br>
