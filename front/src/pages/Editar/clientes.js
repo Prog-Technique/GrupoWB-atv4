@@ -50,7 +50,7 @@ export default function EditarCliente(){
     var Nome = new String
     for(let k=0; list.length > k; ++k){
         var pessoa = list[k]
-        if(pessoa[0] == id){
+        if(pessoa[0] === id){
             Nome = pessoa
             break 
         }  
@@ -102,7 +102,8 @@ export default function EditarCliente(){
                             <label>Mais informações:</label>
                             <input type="text" placeholder={Nome[9]} onChange={(e) => setInfo(e.target.value)}/>
                         </div>
-                        <Button className="submit" variant="outline-dark" type='submit' onClick={() => handleSubmit()}>Atualizar</Button>{' '}
+                        
+                        <Button className="submit" type='submit' onClick={() => handleSubmit()}>Atualizar</Button>{' '}
                     </form>
                 </div>
             </main>

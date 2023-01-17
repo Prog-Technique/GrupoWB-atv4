@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FiEdit, FiZoomIn, FiTrash2 } from "react-icons/fi";
+import { FiEdit, FiTrash2 } from "react-icons/fi";
 import Header from "../../component/header";
 import Axios from "axios";
 import { useState, useEffect } from "react";
@@ -42,7 +42,7 @@ export default function Clientes() {
                                 <th>Bairro</th>
                                 <th>Rua</th>
                                 <th>Número</th>
-                                <th>Código postal</th>
+                                <th>CEP</th>
                                 <th>Informações</th>
                                 <th>Ações</th>
                         </tr>
@@ -64,7 +64,6 @@ export default function Clientes() {
                             <td>
                                 <div className='Column'>
                                     <Link to={`/editar_cliente/${value[0]}`}><FiEdit></FiEdit>Editar</Link> <br />
-                                    <Link to="/clientes"><FiZoomIn></FiZoomIn>Visualizar</Link> <br />
                                     <Link to="#" onClick={() => handleSubmit(value[0])}><FiTrash2></FiTrash2>Excluir</Link>
                                 </div>
                             </td>

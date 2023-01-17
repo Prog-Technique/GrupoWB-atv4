@@ -50,12 +50,6 @@ h1{
 }
 
 
-
-svg:hover{
-    stroke-width: 3;
-    height: 30px;
-}
-
 .Column a{
     color: black;
 }

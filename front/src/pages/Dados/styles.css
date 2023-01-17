@@ -58,6 +58,21 @@ tr button{
     justify-content: center;
 }
 
+svg {
+    margin-right: 3 px;
+}
+
+.submit{
+    border: 0 solid;
+    padding: 15px 20px;
+    border-radius: 3px;
+    color: white;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    transition: .2s ease-out;
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
 @media screen and (max-width: 680px) {
 
     .container-table {

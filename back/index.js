@@ -27,17 +27,10 @@ async function deletar(id,tabela){
     WHERE ${tabela}_id = ${id};`)
 }
 // editar
-async function editarCliente(id,nome,nome_social,endereco){
+async function editarCliente(id,edicao){
     const con = await connect();
     con.query(`update clientes 
-    set nome = '${nome}',nome_social = '${nome_social}',
-    estado = '${endereco.estado}',
-    cidade = '${endereco.cidade}',
-    bairro = '${endereco.bairro}',
-    rua = '${endereco.rua}',
-    numero = '${endereco.numero}',
-    codigoPostal = '${endereco.codigoPostal}',
-    info = '${endereco.infos}'
+    set ${edicao}
     where cliente_id = ${id};`)
 }
 
@@ -92,7 +85,67 @@ app.post("/editar/cliente", (req, res) => {
     const { nome_social } = req.body;
     const { endereco } = req.body;
 
-    editarCliente(id,nome,nome_social,endereco)
+    var edicao = new String;
+    if(nome != ''){
+        edicao += `nome = '${nome}'`
+    }
+    if(nome_social != ''){
+        if(edicao.length>0){
+            edicao += `,nome_social = '${nome_social}'`
+        }else{
+            edicao += `nome_social = '${nome_social}'`
+        }
+    }
+    if(endereco.estado != ''){
+        if(edicao.length>0){
+            edicao += `,estado = '${endereco.estado}'`
+        }else{
+            edicao += `estado = '${endereco.estado}'`
+        }
+    }
+    if(endereco.cidade != ''){
+        if(edicao.length>0){
+            edicao += `,cidade = '${endereco.cidade}'`
+        }else{
+            edicao += `cidade = '${endereco.cidade}'`
+        }
+    }
+    if(endereco.bairro != ''){
+        if(edicao.length>0){
+            edicao += `,bairro = '${endereco.bairro}'`
+        }else{
+            edicao += `bairro = '${endereco.bairro}'`
+        }
+    }
+    if(endereco.rua != ''){
+        if(edicao.length>0){
+            edicao += `,rua = '${endereco.rua}'`
+        }else{
+            edicao += `rua = '${endereco.rua}'`
+        }
+    }
+    if(endereco.numero != ''){
+        if(edicao.length>0){
+            edicao += `,numero = '${endereco.numero}'`
+        }else{
+            edicao += `numero = '${endereco.numero}'`
+        }
+    }
+    if(endereco.codigoPostal != ''){
+        if(edicao.length>0){
+            edicao += `,codigoPostal = '${endereco.codigoPostal}'`
+        }else{
+            edicao += `codigoPostal = '${endereco.codigoPostal}'`
+        }
+    }
+    if(endereco.infos != ''){
+        if(edicao.length>0){
+            edicao += `,info = '${endereco.infos}'`
+        }else{
+            edicao += `info = '${endereco.infos}'`
+        }
+    }
+    editarCliente(id,edicao)
 });
 
 
